@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { enviroment } from 'src/enviroments/enviroments';
 import { JwtDto } from '../model/jwt-dto';
 import { LoginUsuario } from '../model/login-usuario';
 import { NuevoUsuario } from '../model/nuevo-usuario';
@@ -14,7 +15,8 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
 * Emplea HttpClient para realizar HTTP Request al BackEnd.
 */
 export class AuthService {
-  authURL = 'http://localhost:8080/auth/'
+  // authURL = 'http://localhost:8080/auth/'
+  authURL = enviroment.URL + 'auth/';
 
   constructor(private httpClient: HttpClient) { }
 

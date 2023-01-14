@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { enviroment } from 'src/enviroments/enviroments';
 import { Educacion } from '../model/educacion';
 
 @Injectable({
@@ -9,7 +10,8 @@ import { Educacion } from '../model/educacion';
 // Clase
 export class EducacionService {
 
-  URL = 'http://localhost:8080/educacion/'
+  //URL = 'http://localhost:8080/educacion/'
+  URL = enviroment.URL + 'educacion/';
 
   constructor(private httpClient: HttpClient) { }
 
