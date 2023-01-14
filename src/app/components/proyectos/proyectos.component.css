@@ -1,0 +1,9 @@
+.row {
+    padding: 20px;
+}
+
+div {
+    background-color: rgb(33, 37, 41);
+    color: #E5E9F0;
+    text-align: center;
+}

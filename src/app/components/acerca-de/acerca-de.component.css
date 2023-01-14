@@ -1,0 +1,45 @@
+.row {
+    padding: 20px;
+}
+
+div {
+    background-color: rgb(33, 37, 41);
+    color: #E5E9F0;
+    /* color: #A3BE8C; */
+    text-align: center;
+}
+
+#texto-descripcion {
+    color: rgb(134, 138, 141);
+}
+
+/* etiqueta nombre */
+#nombre {
+    font-weight: bold;
+}
+
+#nombre:hover {
+    color: orange;
+}
+
+#boton-acerca {
+    padding-left: 100px;
+}
+
+@media(min-width: 576px) {
+    #fotoperfil {
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px gray;
+    }
+}
+
+@media(max-width: 575px) {
+    #fotoperfil {
+        position: unset;
+        width: 30%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px gray;
+        left: 30%;
+        top: 950x;
+    }
+}

@@ -1,0 +1,33 @@
+.row {
+    padding: 20px;
+}
+
+/* con display: inline ambos elementos del DOM quedan en la misma línea */
+h1,
+h2,
+h3 {
+    display: inline;
+    color: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    background-color: rgb(33, 37, 41);
+    color: #E5E9F0;
+}
+
+.row {
+    padding: 20px;
+    background-color: rgb(33, 37, 41);
+    color: whitesmoke;
+}
+
+/* con display: inline ambos elementos del DOM quedan en la misma línea */
+
+
+td {
+    color: whitesmoke;
+}

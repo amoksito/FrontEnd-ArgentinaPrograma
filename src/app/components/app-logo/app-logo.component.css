@@ -1,0 +1,25 @@
+/* contenedor principal del logo, de las
+redes sociales y del boton de login */
+.container {
+    display: flex;
+    /* con esto pone logo y redes en las dos puntas */
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed;
+    background-color: black; */
+}
+
+#logoAP {
+    width: 150px;
+}
+
+img {
+    width: 50px;
+    /* margin left p/q elementos del header queden separados */
+    margin-left: 10px;
+}
+
+.btn {
+    border-width: medium;
+    margin-left: 10px;
+}

@@ -1,0 +1,27 @@
+<div class="row">
+    <!-- diferentes configuraciones de rejilla para diferentes dispositivos -->
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <!-- img-fluid: clase de bootstrap para hacerla responsiva -->
+        <img src="../../../assets/fotoperfil.png" class="img-fluid" id="fotoperfil">
+    </div>
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+        <h2 id="nombre">{{persona.nombre}} {{persona.apellido}}</h2>
+        <br>
+        <p style="color: rgb(134, 138, 141);">Full Stack Developer Jr.</p>
+    </div>
+    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+        <span>
+            <h1>Acerca de mí</h1>
+            <p style="text-align: justify;" id="texto-descripcion">{{persona.descripcion}}</p>
+        </span>
+    </div>
+    <div class="col-lg-3" class="float-right" id="boton-acerca">
+        <button type="button" class="btn btn-light" routerLink="editAcercaDe/1" *ngIf="isLogged"><i
+                class="bi bi-pencil-fill"></i>
+            Editar Acerca De Mí
+        </button>
+    </div>
+</div>
+
+<!-- Por supuesto esto no funciona porque "mensaje" no es parte
+de los campos en nuestra base de datos. -->

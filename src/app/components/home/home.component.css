@@ -1,0 +1,9 @@
+.container-fluid {
+    background-color: #2E3440;
+    color: #E5E9F0;
+}
+
+br {
+    display: block;
+    margin: 0px 0;
+}
